@@ -40,7 +40,7 @@ def get_remote_ip(host):
 def send_data(serversocket, payload):
     print("Sending payload")    
     try:
-        serversocket.sendall(payload.encode()) # changed to no longer encode
+        serversocket.sendall(payload.encode()) 
     except socket.error:
         print ('Send failed')
         sys.exit()
